@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "sps",
+    "type": "java.lang.String",
+    "description": "A description for 'sps'"
+  },
+  {
+    "name": "spring.tymeleaf.template-resolver-order",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.tymeleaf.template-resolver-order'"
+  },
+  {
+    "name": "spring.tymeleaf.prefix",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.tymeleaf.prefix'"
+  },
+  {
+    "name": "spring.tymeleaf.check-template-location",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.tymeleaf.check-template-location'"
+  },
+  {
+    "name": "spring.tymeleaf.suffix",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.tymeleaf.suffix'"
+  },
+  {
+    "name": "spring.tymeleaf.mode",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.tymeleaf.mode'"
+  },
+  {
+    "name": "spring.tymeleaf.cache",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.tymeleaf.cache'"
+  }
+]}
