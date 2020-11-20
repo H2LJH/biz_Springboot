@@ -1,7 +1,0 @@
-# Spring-boot web application이 작동되는 port 설정
-server.port=8080
-
-# thymeleaf view의 설정
-spring.thymeleaf.prefix=classpath:template/
-spring.thymeleaf.suffix=.html
-spring.thymeleaf.mode=HTML5
