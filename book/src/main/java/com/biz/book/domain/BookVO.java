@@ -10,6 +10,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @ToString
 
+@Builder
 @Entity
 @Table(name="tbl_book")
 public class BookVO {
@@ -22,6 +23,6 @@ public class BookVO {
     @Column(length = 255) private String str_name;
     @Column(columnDefinition = "VARCHAR(125)") private String title;
     @Column(length = 30) private String author;
-    @Column(length = 30) private String comp;
-    private int price;
+    @Column(length = 125) private String comp;
+    @Column(nullable = true) private int price;
 }

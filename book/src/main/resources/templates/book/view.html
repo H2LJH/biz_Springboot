@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+           document.querySelector("div.button_box").addEventListener("click", function(e){
+                let className = e.target.className;
+                let id = e.target.dataset.id;
+                if(className === "btn_delete" && confirm("정말 삭제할까요 ?"))
+                        document.location.replace(`/book/delete/${id}`);
+           })
+        });
+    </script>
+</head>
+<body>
+    <ul th:object="${BOOK}">
+        <li th:text="*{id}"/>
+        <li th:text="*{title}" />
+        <li th:text="*{author}"/>
+        <li th:text="*{comp}"/>
+        <li th:text="*{price}"/>
+    </ul>
+    <div class="button_box">
+        <button class="btn_update" th:data-id="${BOOK.id}">수정</button>
+        <button class="btn_delete" th:data-id="${BOOK.id}">삭제</button>
+    </div>
+</body>
+</html>
